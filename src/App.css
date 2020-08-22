@@ -1,28 +1,86 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+    animation: App-logo-spin infinite 20s linear;
+    height: 80px;
 }
 
 .App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+    background-color: #222;
+    height: 4rem;
+    padding: 11px;
+    color: white;
+    box-sizing: border-box;
 }
 
 .App-title {
-  font-size: 1.5em;
+    size: 1.5em;
+    margin: unset;
 }
 
 .App-intro {
-  font-size: large;
+    font-size: large;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.form-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+}
+
+form {
+    margin: 100px;
+}
+
+.input-field {
+    position: relative;
+    width: 7rem;
+    height: 44px;
+    line-height: 44px;
+}
+
+label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: #d3d3d3;
+    transition: 0.2s all;
+    cursor: text;
+}
+
+input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    padding: 0.5rem 0;
+    border-bottom: 2px solid #d3d3d3;
+    box-shadow: none;
+    color: #111;
+}
+
+input:invalid {
+    outline: 0;
+    /* // color: #ff2300;
+    //   border-color: #ff2300; */
+}
+
+input:focus,
+input:valid {
+    border-color: #00dd22;
+}
+
+input:focus~label,
+input:valid~label {
+    font-size: 14px;
+    top: -24px;
+    width: fit-content;
+    color: #00dd22;
 }
