@@ -16,7 +16,7 @@
 Clone repo
 
 ```
-git clone https://github.com/satendra02/react-chrome-extension.git
+git clone https://github.com/dineshsy/PxtoRem.git
 ```
 
 Go to `PxtoRem` directory run
